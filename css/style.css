@@ -135,7 +135,25 @@
   width: 33%;
   height: 95%;
   background: yellow;
-  margin:2px;
+  margin:1px;
+}
+
+.growth-container, .customers-container {
+  width: 70%;
+  height: 100%;
+  /* background:red; */
+  margin:auto;
+  position: relative;
+}
+
+.learn-and-growth, .customers-section {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  width: 100%;
+  background: purple;
 }
 
 
