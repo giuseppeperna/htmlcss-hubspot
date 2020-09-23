@@ -3,3 +3,30 @@
   margin: 0;
   padding: 0;
 }
+
+.navbar-top {
+  background: #F4F9FD;
+}
+
+.navbar-bottom {
+  background: #FFFFFF;
+}
+
+.homepage-banner {
+  background: #FFF2EF;
+}
+
+.separator-bar {
+  background: #AFEBE4;
+}
+
+/* Classi relative solo alla prima fase di blocking del layout */
+.small-size {
+  height:90px;
+  border: 1px solid black;
+}
+
+.medium-size {
+  height: 650px;
+  border: 1px solid black;
+}
