@@ -39,7 +39,6 @@
 .elements-container {
   width: 70%;
   height: 100%;
-  /* background:red; */
   margin:auto;
   position: relative;
 }
@@ -117,7 +116,6 @@
 .elements-main-container {
   width: 70%;
   height: 25%;
-  /* background:red; */
   margin:auto;
   position: relative;
 }
@@ -125,7 +123,6 @@
 .threecol-main-container {
   width: 70%;
   height: 50%;
-  /* background:red; */
   margin:auto;
   position: relative;
 }
@@ -141,7 +138,6 @@
 .growth-container, .customers-container {
   width: 70%;
   height: 100%;
-  /* background:red; */
   margin:auto;
   position: relative;
 }
@@ -154,6 +150,47 @@
   height: 90%;
   width: 100%;
   background: purple;
+}
+
+.footer-col-container {
+  width: 70%;
+  height: 65%;
+  margin:auto;
+  position: relative;
+}
+
+.footer-columns{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  width: 100%;
+}
+
+.footer-bottom-container{
+  width: 70%;
+  height: 30%;
+  position:relative;
+  margin: auto;
+}
+
+.footer-bottom {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background: pink;
+}
+
+.footer-columns div {
+  float: left;
+  width: 24%;
+  height: 95%;
+  background: yellow;
+  margin:5px;
 }
 
 
