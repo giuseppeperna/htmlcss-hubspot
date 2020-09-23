@@ -94,6 +94,51 @@
   background: lightgrey;
 }
 
+.mission-text {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  width: 100%;
+  background: green;
+}
+
+.learn-more{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  width: 100%;
+  background: blue;
+}
+
+.elements-main-container {
+  width: 70%;
+  height: 25%;
+  /* background:red; */
+  margin:auto;
+  position: relative;
+}
+
+.threecol-main-container {
+  width: 70%;
+  height: 50%;
+  /* background:red; */
+  margin:auto;
+  position: relative;
+}
+
+.card-feature {
+  float: left;
+  width: 33%;
+  height: 95%;
+  background: yellow;
+  margin:2px;
+}
+
+
 /* Classi relative solo alla prima fase di blocking del layout */
 
 .border {
@@ -113,5 +158,5 @@
 }
 
 .big-size {
-  height: 1200px;
+  height: 1500px;
 }
