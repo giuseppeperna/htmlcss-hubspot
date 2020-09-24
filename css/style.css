@@ -4,36 +4,97 @@
   padding: 0;
 }
 
+body {
+  font-family: Tahoma, sans-serif;
+}
+
+
 .navbar-top {
   background: #F4F9FD;
+  height: 90px;
+  border-bottom: 1px solid black;
+}
+
+.navbar-top span, .links-left :nth-child(4) {
+  margin-left: 8px;
+  text-decoration: none;
+  font-family: tahoma,sans-serif;
+  color: #344758;
+}
+
+.links-left i {
+  color:#344758;
+}
+
+.links-left{
+  position: absolute;
+  left:0;
+  top:50%;
+  transform: translate(0, -50%);
+}
+
+.links-right {
+  position: absolute;
+  right:0;
+  top:50%;
+  transform: translate(0, -50%);
+}
+
+
+.gethubspot-button {
+  height: 35px;
+  width: 120px;
+  border-radius: 4px;
+  border: none;
+  background: #ff7a59;
+  color: white;
+  margin-left: 20px;
+}
+
+.login-button {
+  height: 35px;
+  width: 55px;
+  border-radius: 4px;
+  border: 1px solid #ff7a59;
+  background: transparent;
+  color: #ff7a59;
+  margin-left: 20px;
+}
+
+.search-login .links-right i {
+  color: #2ca1b3;
 }
 
 .navbar-bottom {
   background: #FFFFFF;
+  height: 90px;
 }
 
-.homepage-banner {
-  background: #FFF2EF;
-}
-
-.separator-bar {
-  background: #AFEBE4;
+.homepage-hero {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 760px;
 }
 
 .main-content-info {
   background: #F4F9FD;
+  height: 1500px;
 }
 
 .main-content-growth {
   background: #00B3AF;
+  height: 800px;
 }
 
 .main-content-customers {
   background: #FFFFFF;
+  height: 800px;
 }
 
 .hubspot-footer {
   background: #32495C;
+  height:670px;
 }
 
 .elements-container {
@@ -49,8 +110,7 @@
   top:50%;
   transform: translate(0, -50%);
   height: 70%;
-  width: 20%;
-  background: green;
+  width: 50%;
 }
 
 .search-login {
@@ -59,8 +119,7 @@
   top:50%;
   transform: translate(0, -50%);
   height: 70%;
-  width: 25%;
-  background: orange;
+  width: 50%;
 }
 
 .logo {
@@ -70,7 +129,14 @@
   transform: translate(0, -50%);
   height: 70%;
   width: 10%;
-  background: cyan;
+}
+
+.logo img {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  width:100%;
 }
 
 .nav-menu {
@@ -79,8 +145,13 @@
   top:50%;
   transform: translate(0, -50%);
   height: 70%;
-  width: 40%;
-  background: purple;
+  width: 80%;
+}
+
+.nav-menu ul li {
+  display: inline-block;
+  margin-left: 25px;
+  color: #344758;
 }
 
 .text-banner {
@@ -90,7 +161,32 @@
   transform: translate(0, -50%);
   height: 70%;
   width: 50%;
-  background: lightgrey;
+}
+
+.text-banner * {
+  margin-bottom: 30px;
+}
+
+.text-banner h1 {
+  font-size: 55px;
+  color: #344758;
+}
+
+.text-banner p {
+  font-size: 18px;
+}
+
+.text-banner :last-child {
+  font-size: 12px;
+}
+
+.text-banner button {
+  height: 50px;
+  width: 180px;
+  border-radius: 4px;
+  border: none;
+  background: #ff7a59;
+  color: white;
 }
 
 .mission-text {
@@ -132,7 +228,8 @@
   width: 33%;
   height: 95%;
   background: yellow;
-  margin:1px;
+  margin:5px;
+  width: calc(100% / 3 - 10px);
 }
 
 .growth-container, .customers-container {
@@ -191,6 +288,7 @@
   height: 95%;
   background: yellow;
   margin:5px;
+  width: calc(100% / 4 - 10px);
 }
 
 
@@ -198,20 +296,4 @@
 
 .border {
   border: 1px solid black;
-}
-
-.small-size {
-  height:90px;
-}
-
-.medium-size {
-  height: 670px;
-}
-
-.medium-size-main {
-  height: 800px;
-}
-
-.big-size {
-  height: 1500px;
 }
