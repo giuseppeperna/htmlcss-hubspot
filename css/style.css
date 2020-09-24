@@ -196,8 +196,39 @@ body {
   transform: translate(-50%, -50%);
   height: 90%;
   width: 100%;
-  background: green;
 }
+
+.mission-text * {
+  color:#344758;
+}
+
+
+ .mission-text > img {
+  height: 180px;
+  position: absolute;
+  left:50%;
+  top:0;
+  transform: translate(-50%, 0);
+}
+
+.mission-text h1 {
+  position: absolute;
+  left:50%;
+  top:180px;
+  transform: translate(-50%, 0);
+  font-size: 28px;
+}
+
+.mission-text p {
+  position: relative;
+  left:50%;
+  top:250px;
+  transform: translate(-50%, 0);
+  padding: 0 150px 0 150px;
+  text-align: center;
+  font-size: 15px;
+}
+
 
 .learn-more{
   position: absolute;
@@ -206,30 +237,192 @@ body {
   transform: translate(-50%, -50%);
   height: 90%;
   width: 100%;
-  background: blue;
+  background: white;
+  border-radius: 5px;
+  border:1px solid lightgrey;
+  margin-top: 5px;
+}
+
+.left-side {
+  position:relative;
+  float:left;
+  height: 100%;
+  width: 30%;
+}
+
+.left-side img {
+  position: absolute;
+  left:50%;
+  top:30px;
+  transform: translate(-50%, 0);
+}
+
+.left-side button {
+  position: absolute;
+  left:50%;
+  top:200px;
+  transform: translate(-50%, 0);
+}
+
+.learn-more-button {
+  height: 50px;
+  width: 140px;
+  border-radius: 4px;
+  border: none;
+  background: #ff7a59;
+  color: white;
+}
+
+.right-side {
+  position:relative;
+  float:left;
+  height: 100%;
+  width: 70%;
+  padding:30px 0 0 0;
+  color: #344758;
+}
+
+.right-side i, .card-feature i {
+  color:#ff7a59;
+}
+
+.right-side h2, h3 {
+  margin: 20px 0 20px 0;
+}
+
+.right-side h3 {
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.right-side p {
+  margin: 40px 0 0 0;
+  padding:0 150px 0 0;
+}
+
+.right-side span {
+  margin: 0 10px 0 10px;
+}
+
+.riga {
+  width:55%;
+  border-top: 2px solid grey;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .elements-main-container {
   width: 70%;
-  height: 25%;
+  height: 23%;
   margin:auto;
   position: relative;
 }
 
 .threecol-main-container {
   width: 70%;
-  height: 50%;
+  height: 48%;
   margin:auto;
   position: relative;
+  margin-top: 40px;
 }
 
 .card-feature {
   float: left;
   width: 33%;
-  height: 95%;
-  background: yellow;
-  margin:5px;
-  width: calc(100% / 3 - 10px);
+  height: 100%;
+  margin:1px;
+  width: calc(100% / 3 - 2px);
+  color: #344758;
+}
+
+.card-feature img {
+  position: relative;
+  height: 100px;
+  left:50%;
+  top:20px;
+  transform: translate(-50%, 0);
+}
+
+.card-feature .riga {
+  position: relative;
+  top:160px;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width:80%;
+  border-top: 2px solid grey;
+  margin-bottom: 5px;
+}
+
+.card-feature h3 {
+  position: relative;
+  top:190px;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.card-feature i, .card-feature span {
+  position: relative;
+  top:190px;
+  left:30px;
+  margin: 0 5px 2px 0;
+  font-size: 16px;
+}
+
+.card-feature .learn-more-button {
+  position: relative;
+  top:270px;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-left {
+  float:left;
+  height: 100%;
+  width: 92%;
+  background: white;
+  border-radius: 5px;
+  border:1px solid lightgrey;
+}
+
+.card-feature h2 {
+  position: relative;
+  left:50%;
+  top:30px;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.card-feature p {
+  position: relative;
+  left:50%;
+  top:70px;
+  padding: 0 35px 0 35px;
+  transform: translate(-50%, 0);
+  text-align: center;
+  font-size: 15px;
+}
+
+.card-right {
+  float:right;
+  height: 100%;
+  width: 92%;
+  background: white;
+  border-radius: 5px;
+  border:1px solid lightgrey;
+}
+
+.card-center {
+  height: 100%;
+  width: 92%;
+  position: relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background: white;
+  border-radius: 5px;
+  border:1px solid lightgrey;
 }
 
 .growth-container, .customers-container {
