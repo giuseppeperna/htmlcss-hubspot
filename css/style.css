@@ -8,12 +8,24 @@ body {
   font-family: tahoma, 'Montserrat', sans-serif;
 }
 
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Proprietà relative alle Navbars */
 
 .navbar-top {
   background: #F4F9FD;
-  height: 90px;
   border-bottom: 1px solid black;
+}
+
+.navbar-container {
+  position: relative;
+  width:70%;
+  height:90px;
+  margin:auto;
 }
 
 .navbar-top span, .links-left :nth-child(4) {
@@ -127,14 +139,13 @@ body {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
-  height: 760px;
 }
 
-.elements-container {
-  width: 70%;
-  height: 100%;
-  margin:auto;
+.hero-container {
   position: relative;
+  width:70%;
+  height:760px;
+  margin:auto;
 }
 
 .text-banner {
@@ -176,14 +187,14 @@ body {
 
 .main-content-info {
   background: #F4F9FD;
-  height: 1500px;
 }
 
-.main-content-growth {
-  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
-  height: 800px;
+.main-container {
+  position: relative;
+  width:70%;
+  height:1500px;
+  margin:auto;
 }
-
 
 .mission-text {
   position: absolute;
@@ -307,14 +318,14 @@ body {
 }
 
 .elements-main-container {
-  width: 70%;
+  width: 100%;
   height: 23%;
   margin:auto;
   position: relative;
 }
 
 .threecol-main-container {
-  width: 70%;
+  width: 100%;
   height: 48%;
   margin:auto;
   position: relative;
@@ -422,13 +433,19 @@ body {
 
 /* Propietà relative alla sezione Growth & Customers */
 
-.main-content-customers {
-  background: #FFFFFF;
-  height: 620px;
+.main-content-growth {
+  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+}
+
+.growth-section-container {
+  position: relative;
+  width:70%;
+  height:800px;
+  margin:auto;
 }
 
 .growth-container, .customers-container {
-  width: 70%;
+  width: 100%;
   height: 100%;
   margin:auto;
   position: relative;
@@ -525,6 +542,18 @@ img[src="img/growth-icon-5.png"] {
 
 img[src="img/growth-icon-8.png"] {
   height: 25px;
+}
+
+.main-content-customers {
+  background: #FFFFFF;
+  /* height: 620px; */
+}
+
+.customers-section-container {
+  position: relative;
+  width:70%;
+  height:620px;
+  margin:auto;
 }
 
 .customers-partners {
@@ -637,18 +666,21 @@ img[src="img/growth-icon-8.png"] {
 
 /* Propietà relative al footer */
 
-.footer-grey {
-
-}
-
 .hubspot-footer {
   background: #32495C;
-  height:670px;
+  /* height:670px; */
   color:#ccd5e2;
 }
 
+.footer-container{
+  position: relative;
+  width:70%;
+  height:670px;
+  margin:auto;
+}
+
 .footer-col-container {
-  width: 70%;
+  width: 100%;
   height: 65%;
   margin:auto;
   position: relative;
@@ -695,12 +727,11 @@ img[src="img/growth-icon-8.png"] {
 }
 
 .footer-list {
-  /* background: red; */
   color:#ccd5e2;
 }
 
 .footer-bottom-container{
-  width: 70%;
+  width: 100%;
   height: 30%;
   position:relative;
   margin: auto;
