@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Tahoma, sans-serif;
+  font-family: tahoma, 'Montserrat', sans-serif;
 }
 
 /* Proprietà relative alle Navbars */
@@ -536,7 +536,6 @@ img[src="img/growth-icon-8.png"] {
 }
 
 .customers-partners-logo {
-  position: relative;
   width: 50%;
   height: 30%;
   float: left;
@@ -638,9 +637,14 @@ img[src="img/growth-icon-8.png"] {
 
 /* Propietà relative al footer */
 
+.footer-grey {
+
+}
+
 .hubspot-footer {
   background: #32495C;
   height:670px;
+  color:#ccd5e2;
 }
 
 .footer-col-container {
@@ -659,6 +663,42 @@ img[src="img/growth-icon-8.png"] {
   width: 100%;
 }
 
+.footer-list ul li {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.footer-list li {
+  display:block;
+  font-size: 15px;
+}
+
+.footer-list a, .footer-list h4 {
+  text-decoration: none;
+  color:#ccd5e2;
+}
+
+.footer-list h4 {
+  margin-bottom:30px;
+}
+
+.footer-list ul button {
+  margin-top: 30px;
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+.footer-list i {
+  margin: 20px 15px 0 0;
+}
+
+.footer-list {
+  /* background: red; */
+  color:#ccd5e2;
+}
+
 .footer-bottom-container{
   width: 70%;
   height: 30%;
@@ -673,16 +713,71 @@ img[src="img/growth-icon-8.png"] {
   transform: translate(-50%, -50%);
   height: 100%;
   width: 100%;
-  background: pink;
+  /* background: pink; */
 }
 
 .footer-columns div {
   float: left;
-  width: 24%;
-  height: 95%;
-  background: yellow;
+  /* background: yellow; */
   margin:5px;
   width: calc(100% / 4 - 10px);
+}
+
+.footer-list::after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+.footer-bottom li {
+  display: inline-block;
+  padding:0 15px 0 15px;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color:#ccd5e2;
+}
+
+.footer-bottom ul {
+  text-align: center;
+}
+
+.riga-footer {
+  border-top: 1px solid #ccd5e2;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.logo-copyright {
+  position: absolute;
+  /* background: red; */
+  height: 40%;
+  width:20%;
+  top:90px;
+}
+
+.logo-copyright img {
+  height: 40px;
+  position: relative;
+  left:0;
+}
+
+.policy {
+  position: absolute;
+  /* background: red; */
+  height: 40%;
+  width:20%;
+  top:90px;
+  right:0;
+}
+
+.policy a {
+  float: right;
+  margin-left: 25px;
 }
 
 
