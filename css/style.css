@@ -180,15 +180,10 @@ body {
 }
 
 .main-content-growth {
-  /* background: #00B3AF; */
   background-image: linear-gradient(45deg, #00a4bd, #00bda5);
   height: 800px;
 }
 
-.main-content-customers {
-  background: #FFFFFF;
-  height: 800px;
-}
 
 .mission-text {
   position: absolute;
@@ -427,6 +422,11 @@ body {
 
 /* Propietà relative alla sezione Growth & Customers */
 
+.main-content-customers {
+  background: #FFFFFF;
+  height: 620px;
+}
+
 .growth-container, .customers-container {
   width: 70%;
   height: 100%;
@@ -525,6 +525,114 @@ img[src="img/growth-icon-5.png"] {
 
 img[src="img/growth-icon-8.png"] {
   height: 25px;
+}
+
+.customers-partners {
+  position: relative;
+  width: 40%;
+  height: 30%;
+  float: left;
+  color: #344758;
+}
+
+.customers-partners-logo {
+  position: relative;
+  width: 50%;
+  height: 30%;
+  float: left;
+  color: #344758;
+}
+
+.customers-partners-bottom {
+  width: 100%;
+  height: 75%;
+  float: left;
+}
+
+.customers-partners h1 {
+  position: absolute;
+  left: 150px;
+  top: 15px;
+  font-size: 35px;
+}
+
+.customers-text {
+  position: absolute;
+  left: 150px;
+  top: 70px;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.partners-logo {
+  position: relative;
+  float: left;
+  width: calc(100% / 4);
+  height:68px;
+  top: 15px;
+}
+
+.partners-logo img {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 36px;
+  width: 80%;
+  padding: 11px;
+
+}
+
+.partners-logo:nth-child(3) img, .partners-logo:nth-child(4) img, .partners-logo:nth-child(5) img,.partners-logo:nth-child(7) img {
+  height: 55px;
+  width: 90%;
+}
+
+.partners-logo:nth-child(8) img {
+  height: 45px;
+  width: 100%;
+}
+
+.hubspot-growing {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.hubspot-growing button {
+  height: 50px;
+  width: 180px;
+  border-radius: 4px;
+  border: none;
+  background: #ff7a59;
+  color: white;
+}
+
+.hubspot-growing h1 {
+  font-size: 35px;
+  margin-top: 50px;
+}
+
+.hubspot-growing p {
+  font-size: 18px;
+}
+
+.hubspot-growing :last-child {
+  font-size: 12px;
+}
+
+.hubspot-growing * {
+  margin-bottom: 40px;
+}
+
+.hubspot-growing:not(button) {
+  color: #344758;
+}
+
+.hubspot-growing img {
+  float:right;
+  height:380px;
 }
 
 
