@@ -85,6 +85,7 @@ body {
 
 .nav-links {
   position: absolute;
+  float:left;
   left:0;
   top:50%;
   transform: translate(0, -50%);
@@ -192,17 +193,7 @@ body {
 .main-container {
   position: relative;
   width:70%;
-  height:1500px;
   margin:auto;
-}
-
-.mission-text {
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%, -50%);
-  height: 90%;
-  width: 100%;
 }
 
 .mission-text * {
@@ -211,38 +202,28 @@ body {
 
  .mission-text > img {
   height: 180px;
-  position: absolute;
-  left:50%;
+  position: relative;
   top:0;
+  left:50%;
   transform: translate(-50%, 0);
+  margin-top: 30px;
 }
 
 .mission-text h1 {
-  position: absolute;
-  left:50%;
-  top:180px;
-  transform: translate(-50%, 0);
+  margin:5px 0 10px 0;
   font-size: 28px;
+  text-align: center;
 }
 
 .mission-text p {
-  position: relative;
-  left:50%;
-  top:250px;
-  transform: translate(-50%, 0);
   padding: 0 150px 0 150px;
+  margin: 25px 0 25px 0;
   text-align: center;
   font-size: 15px;
 }
 
 
 .learn-more{
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%, -50%);
-  height: 90%;
-  width: 100%;
   background: white;
   border-radius: 5px;
   border:1px solid lightgrey;
@@ -254,19 +235,20 @@ body {
   float:left;
   height: 100%;
   width: 30%;
+  padding: 40px 80px 100px 80px;
 }
 
 .left-side img {
-  position: absolute;
+  position: relative;
+  top:0;
   left:50%;
-  top:30px;
   transform: translate(-50%, 0);
 }
 
 .left-side button {
-  position: absolute;
+  position: relative;
+  top:0;
   left:50%;
-  top:200px;
   transform: translate(-50%, 0);
 }
 
@@ -282,9 +264,8 @@ body {
 .right-side {
   position:relative;
   float:left;
-  height: 100%;
+  top:40px;
   width: 70%;
-  padding:30px 0 0 0;
   color: #344758;
 }
 
@@ -293,7 +274,7 @@ body {
 }
 
 .right-side h2, h3 {
-  margin: 20px 0 20px 0;
+  margin: 20px 0 35px 0;
 }
 
 .right-side h3 {
@@ -319,8 +300,7 @@ body {
 
 .elements-main-container {
   width: 100%;
-  height: 23%;
-  margin:auto;
+  margin:0 0 40px 0;
   position: relative;
 }
 
@@ -335,57 +315,55 @@ body {
 .card-feature {
   float: left;
   width: 33%;
-  height: 100%;
   margin:1px;
   width: calc(100% / 3 - 2px);
   color: #344758;
+  margin-bottom: 50px;
 }
 
 .card-feature img {
   position: relative;
   height: 100px;
   left:50%;
-  top:20px;
+  top:0px;
   transform: translate(-50%, 0);
+  margin-top: 20px;
 }
 
 .card-feature .riga {
   position: relative;
-  top:160px;
   left:50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   width:80%;
   border-top: 2px solid grey;
-  margin-bottom: 5px;
+  margin: 75px 0 0 0;
 }
 
 .card-feature h3 {
-  position: relative;
-  top:190px;
-  left:50%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  margin-bottom: 60px;
+  margin: 45px 0 0 0;
+  font-size: 18px;
 }
 
 .card-feature i, .card-feature span {
-  position: relative;
-  top:190px;
-  left:30px;
   margin: 0 5px 2px 0;
   font-size: 16px;
+
+}
+
+.feature-list {
+  padding: 30px 0 0 30px;
 }
 
 .card-feature .learn-more-button {
   position: relative;
-  top:270px;
   left:50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
+  margin: 35px 0 25px; 0;
 }
 
 .card-left {
   float:left;
-  height: 100%;
   width: 92%;
   background: white;
   border-radius: 5px;
@@ -393,26 +371,18 @@ body {
 }
 
 .card-feature h2 {
-  position: relative;
-  left:50%;
-  top:30px;
-  transform: translate(-50%, 0);
   text-align: center;
 }
 
 .card-feature p {
-  position: relative;
-  left:50%;
-  top:70px;
   padding: 0 35px 0 35px;
-  transform: translate(-50%, 0);
+  margin-top: 25px;
   text-align: center;
   font-size: 15px;
 }
 
 .card-right {
   float:right;
-  height: 100%;
   width: 92%;
   background: white;
   border-radius: 5px;
@@ -420,12 +390,11 @@ body {
 }
 
 .card-center {
-  height: 100%;
-  width: 92%;
   position: relative;
-  top:50%;
+  width: 92%;
+  top:0;
   left:50%;
-  transform:translate(-50%, -50%);
+  transform:translate(-50%,0);
   background: white;
   border-radius: 5px;
   border:1px solid lightgrey;
@@ -440,52 +409,52 @@ body {
 .growth-section-container {
   position: relative;
   width:70%;
-  height:800px;
   margin:auto;
 }
 
-.growth-container, .customers-container {
+.growth-container {
   width: 100%;
-  height: 100%;
   margin:auto;
   position: relative;
 }
 
-.learn-and-growth, .customers-section {
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%, -50%);
+.learn-and-growth {
   height: 90%;
   width: 100%;
 }
 
 .text-growth {
   width:100%;
-  height: 30%;
   text-align: center;
   color: white;
   font-size: 20px;
   padding: 5px 60px 0 60px;
+  margin-bottom: 50px;
+}
+
+.text-growth h2 {
+  padding-top: 40px;
 }
 
 .text-growth p {
-  margin-top: 35px;
+  margin-top: 50px;
   font-size: 14px;
 }
 
 .growth-data {
-  width:100%;
   height: 70%;
   padding-bottom: 75px;
+
 }
 
 .data-cell {
   position: relative;
   float: left;
-  width:25%;
+  display: inline-block;
+  width: calc(100% / 4 );
   height:50%;
   border-right: 1px solid white;
+  padding:30px;
 }
 
 .data-cell:nth-child(4), .data-cell:nth-child(8) {
@@ -498,28 +467,25 @@ body {
 
 .data-cell img {
   position: absolute;
-  top: 50px;
+  top:30px;
   left:50%;
   transform: translate(-50%, 0);
   height: 32px;
 }
 
 .data-cell h1 {
-  position: absolute;
-  top: 100px;
-  left:50%;
-  transform: translate(-50%, 0);
+
   color: white;
   font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .data-cell p {
-  position: absolute;
-  bottom: 30px;
-  left:50%;
-  transform: translate(-50%, 0);
   color: white;
+  margin-top: 20px;
   font-size: 15px;
+  text-align: center;
 }
 
 .data-cell h1::after {
@@ -532,12 +498,10 @@ body {
 
 img[src="img/growth-icon-4.png"] {
   height: 20px;
-  top:60px;
 }
 
 img[src="img/growth-icon-5.png"] {
   height:50px;
-  top:40px;
 }
 
 img[src="img/growth-icon-8.png"] {
@@ -546,29 +510,38 @@ img[src="img/growth-icon-8.png"] {
 
 .main-content-customers {
   background: #FFFFFF;
-  /* height: 620px; */
+}
+
+.customers-container {
+  margin:auto;
+  position: relative;
+}
+
+.customers-section {
+  left:50%;
+  top:50%;
 }
 
 .customers-section-container {
   position: relative;
   width:70%;
-  height:620px;
   margin:auto;
 }
 
 .customers-partners {
   position: relative;
   width: 40%;
-  height: 30%;
   float: left;
   color: #344758;
+  margin-top:50px;
+  padding-left: 40px;
 }
 
 .customers-partners-logo {
   width: 50%;
-  height: 30%;
   float: left;
   color: #344758;
+  margin-top: 50px;
 }
 
 .customers-partners-bottom {
@@ -578,14 +551,12 @@ img[src="img/growth-icon-8.png"] {
 }
 
 .customers-partners h1 {
-  position: absolute;
   left: 150px;
   top: 15px;
   font-size: 35px;
 }
 
 .customers-text {
-  position: absolute;
   left: 150px;
   top: 70px;
   margin-top: 15px;
@@ -597,35 +568,44 @@ img[src="img/growth-icon-8.png"] {
   position: relative;
   float: left;
   width: calc(100% / 4);
-  height:68px;
   top: 15px;
 }
 
 .partners-logo img {
-  position: absolute;
   top:50%;
   left:50%;
-  transform: translate(-50%,-50%);
-  height: 36px;
   width: 80%;
   padding: 11px;
 
 }
 
 .partners-logo:nth-child(3) img, .partners-logo:nth-child(4) img, .partners-logo:nth-child(5) img,.partners-logo:nth-child(7) img {
-  height: 55px;
   width: 90%;
+  padding:5px 11px 11px 11px;
 }
 
 .partners-logo:nth-child(8) img {
-  height: 45px;
   width: 100%;
+  padding:11px 11px 0 11px;
+}
+
+.partners-logo:nth-child(7) {
+  padding:0px 11px 0 0;
+}
+
+.partners-logo:nth-child(6) {
+  padding:5px 0 0 0;
+}
+
+.partners-logo:nth-child(3), .partners-logo:nth-child(4) {
+  padding:0 11px 0 0;
 }
 
 .hubspot-growing {
   float: left;
   width: 50%;
   height: 100%;
+  margin-top: 40px;
 }
 
 .hubspot-growing button {
@@ -668,31 +648,22 @@ img[src="img/growth-icon-8.png"] {
 
 .hubspot-footer {
   background: #32495C;
-  /* height:670px; */
   color:#ccd5e2;
 }
 
+.footer-section-container {
+  padding-top: 40px;
+}
+
 .footer-container{
-  position: relative;
   width:70%;
-  height:670px;
   margin:auto;
 }
 
 .footer-col-container {
-  width: 100%;
-  height: 65%;
   margin:auto;
   position: relative;
-}
-
-.footer-columns{
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%, -50%);
-  height: 90%;
-  width: 100%;
+  margin-bottom: 80px;
 }
 
 .footer-list ul li {
@@ -716,8 +687,8 @@ img[src="img/growth-icon-8.png"] {
 
 .footer-list ul button {
   margin-top: 30px;
-  width: 180px;
-  height: 40px;
+  width: 165px;
+  height: 35px;
   border-radius: 5px;
   border: none;
 }
@@ -728,41 +699,17 @@ img[src="img/growth-icon-8.png"] {
 
 .footer-list {
   color:#ccd5e2;
-}
-
-.footer-bottom-container{
-  width: 100%;
-  height: 30%;
-  position:relative;
-  margin: auto;
-}
-
-.footer-bottom {
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-  width: 100%;
-  /* background: pink; */
+  padding-right: 60px;
 }
 
 .footer-columns div {
   float: left;
-  /* background: yellow; */
-  margin:5px;
-  width: calc(100% / 4 - 10px);
-}
-
-.footer-list::after {
-  content: "";
-  display: table;
-  clear:both;
+  width: calc(100% / 4);
 }
 
 .footer-bottom li {
   display: inline-block;
-  padding:0 15px 0 15px;
+  padding:80px 10px 20px 10px;
 }
 
 .footer-bottom a {
@@ -776,19 +723,12 @@ img[src="img/growth-icon-8.png"] {
 
 .riga-footer {
   border-top: 1px solid #ccd5e2;
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
 }
 
 .logo-copyright {
-  position: absolute;
-  /* background: red; */
-  height: 40%;
-  width:20%;
-  top:90px;
+  display: inline-block;
+  padding: 35px 0 50px 0;
 }
 
 .logo-copyright img {
@@ -798,17 +738,13 @@ img[src="img/growth-icon-8.png"] {
 }
 
 .policy {
-  position: absolute;
-  /* background: red; */
-  height: 40%;
-  width:20%;
-  top:90px;
-  right:0;
+  display: inline;
 }
 
 .policy a {
   float: right;
   margin-left: 25px;
+  padding-top: 35px;
 }
 
 
