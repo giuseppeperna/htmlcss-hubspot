@@ -21,11 +21,17 @@ body {
   border-bottom: 1px solid black;
 }
 
+.navbar-section {
+  width:100%;
+}
+
 .navbar-container {
   position: relative;
   width:70%;
-  height:90px;
   margin:auto;
+}
+
+.nav-links {
 }
 
 .navbar-top span, .links-left :nth-child(4) {
@@ -40,17 +46,13 @@ body {
 }
 
 .links-left{
-  position: absolute;
-  left:0;
-  top:50%;
-  transform: translate(0, -50%);
+  display: inline-block;
+  vertical-align:middle;
+  padding:36px 0 36px 0;
 }
 
-.links-right {
-  position: absolute;
-  right:0;
-  top:50%;
-  transform: translate(0, -50%);
+.nav-menu .links-right {
+  float: right;
 }
 
 
@@ -83,49 +85,28 @@ body {
   height: 90px;
 }
 
-.nav-links {
-  position: absolute;
-  float:left;
+.search-login {
+  display: inline-block;
+  padding: 30px 0 0 0;
+  position: relative;
+  float: right;
   left:0;
   top:50%;
-  transform: translate(0, -50%);
-  height: 70%;
-  width: 50%;
-}
-
-.search-login {
-  position: absolute;
-  right:0;
-  top:50%;
-  transform: translate(0, -50%);
-  height: 70%;
-  width: 50%;
+  transform: translate(0,0);
 }
 
 .logo {
-  position: absolute;
-  left:0;
-  top:50%;
-  transform: translate(0, -50%);
+  padding:29px 0 0px 0;
   height: 70%;
-  width: 10%;
+  width: 110px;
 }
 
 .logo img {
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%, -50%);
   width:100%;
 }
 
-.nav-menu {
-  position: absolute;
-  right:0;
-  top:50%;
-  transform: translate(0, -50%);
-  height: 70%;
-  width: 80%;
+.nav-menu ul {
+  padding:35px 0 30px 0;
 }
 
 .nav-menu ul li {
@@ -136,30 +117,31 @@ body {
 
 /* proprietà relative all'hero */
 
+
+.hero-section {
+  padding-top: 60px;
+}
+
+
 .homepage-hero {
   background-image: url("../img/hero.jpg");
-  background-size: cover;
+  background-size:cover;
   background-position: center;
 }
 
 .hero-container {
   position: relative;
   width:70%;
-  height:760px;
   margin:auto;
 }
 
 .text-banner {
-  position: absolute;
-  left:0;
-  top:50%;
-  transform: translate(0, -50%);
-  height: 70%;
+  margin-bottom: 350px;
   width: 50%;
 }
 
 .text-banner * {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .text-banner h1 {
@@ -745,11 +727,4 @@ img[src="img/growth-icon-8.png"] {
   float: right;
   margin-left: 25px;
   padding-top: 35px;
-}
-
-
-/* Classi relative solo alla prima fase di blocking del layout */
-
-.border {
-  border: 1px solid black;
 }
