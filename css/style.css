@@ -5,13 +5,80 @@
 }
 
 body {
-  font-family: tahoma, 'Montserrat', sans-serif;
+  font-family: 'Noto Sans', tahoma, 'Montserrat', sans-serif;
 }
 
 .clearfix {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Colours and decoration */
+
+.primary-colour {
+  background-color: #ff7a59;
+}
+
+.primary-text-colour {
+  color: #344758;
+}
+
+.secondary-text-colour {
+  color:#ccd5e2;
+}
+
+.white-text {
+color: #fff;
+}
+
+.decoration-none {
+  text-decoration:none;
+}
+
+/* Call-to-action buttons */
+
+.login-CTA {
+  height: 35px;
+  width: 55px;
+  border-radius: 5px;
+  border: 1px solid #ff7a59;
+  color: #ff7a59;
+  margin-left: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+.gethubspot-CTA {
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+.gethubspot-smalltext {
+  border-radius: 5px;
+  padding: 23px 40px 23px 40px;;
+  font-size: 15px;
+}
+
+.learn-more-CTA {
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  padding:25px 41px 25px 41px;
+  font-size: 15px;
+}
+
+.footer-CTA {
+  margin-top: 30px;
+  width: 165px;
+  height: 37px;
+  border-radius: 5px;
+  background: #ccd5e2;
+  color: #32495C;
+  font-size: 12px;
+  padding:10px 8px 10px 8px;
+  display: block;
+
 }
 
 /* Proprietà relative alle Navbars */
@@ -31,7 +98,8 @@ body {
   margin:auto;
 }
 
-.nav-links {
+.links-right {
+  margin-top:5px;
 }
 
 .navbar-top span, .links-left :nth-child(4) {
@@ -41,7 +109,7 @@ body {
   color: #344758;
 }
 
-.links-left i {
+.links-left i , .links-right i {
   color:#344758;
 }
 
@@ -66,23 +134,12 @@ body {
   margin-left: 20px;
 }
 
-.login-button {
-  height: 35px;
-  width: 55px;
-  border-radius: 4px;
-  border: 1px solid #ff7a59;
-  background: transparent;
-  color: #ff7a59;
-  margin-left: 20px;
-}
-
 .search-login .links-right i {
   color: #2ca1b3;
 }
 
 .navbar-bottom {
   background: #FFFFFF;
-  height: 90px;
 }
 
 .search-login {
@@ -147,23 +204,17 @@ body {
 .text-banner h1 {
   font-size: 55px;
   color: #344758;
+  font-weight: 900;
 }
 
 .text-banner p {
   font-size: 18px;
+  margin-bottom: 70px;
 }
 
 .text-banner :last-child {
   font-size: 12px;
-}
-
-.text-banner button {
-  height: 50px;
-  width: 180px;
-  border-radius: 4px;
-  border: none;
-  background: #ff7a59;
-  color: white;
+  margin-top: 55px;
 }
 
 /* Propietà relative al Main content */
@@ -208,8 +259,17 @@ body {
 .learn-more{
   background: white;
   border-radius: 5px;
-  border:1px solid lightgrey;
+  /* border:1px solid lightgrey; */
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
   margin-top: 5px;
+  width: 100%;
+}
+
+.learn-more-CTA-cards a {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
 }
 
 .left-side {
@@ -217,30 +277,22 @@ body {
   float:left;
   height: 100%;
   width: 30%;
-  padding: 40px 80px 100px 80px;
+  padding: 40px 0px 100px 0px;
 }
 
 .left-side img {
   position: relative;
+  display: block;
   top:0;
   left:50%;
   transform: translate(-50%, 0);
 }
 
-.left-side button {
+.left-side a {
   position: relative;
-  top:0;
+  top:20px;;
   left:50%;
   transform: translate(-50%, 0);
-}
-
-.learn-more-button {
-  height: 50px;
-  width: 140px;
-  border-radius: 4px;
-  border: none;
-  background: #ff7a59;
-  color: white;
 }
 
 .right-side {
@@ -303,6 +355,13 @@ body {
   margin-bottom: 50px;
 }
 
+.learn-more-CTA.cards {
+  position: relative;
+  left:50%;
+  transform: translate(-50%, 0);
+  margin: 60px 0 35px 0px;
+}
+
 .card-feature img {
   position: relative;
   height: 100px;
@@ -349,7 +408,7 @@ body {
   width: 92%;
   background: white;
   border-radius: 5px;
-  border:1px solid lightgrey;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
 }
 
 .card-feature h2 {
@@ -368,7 +427,11 @@ body {
   width: 92%;
   background: white;
   border-radius: 5px;
-  border:1px solid lightgrey;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+.card-right p {
+  padding: 0 30px 0 30px;
 }
 
 .card-center {
@@ -379,7 +442,7 @@ body {
   transform:translate(-50%,0);
   background: white;
   border-radius: 5px;
-  border:1px solid lightgrey;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
 }
 
 /* Propietà relative alla sezione Growth & Customers */
@@ -633,6 +696,10 @@ img[src="img/growth-icon-8.png"] {
   color:#ccd5e2;
 }
 
+.hubspot-footer.footer-CTA {
+  background: #32495C;
+}
+
 .footer-section-container {
   padding-top: 40px;
 }
@@ -663,16 +730,13 @@ img[src="img/growth-icon-8.png"] {
   color:#ccd5e2;
 }
 
-.footer-list h4 {
-  margin-bottom:30px;
+.footer-list a[class="footer-CTA"]{
+  color: #32495C;
 }
 
-.footer-list ul button {
-  margin-top: 30px;
-  width: 165px;
-  height: 35px;
-  border-radius: 5px;
-  border: none;
+.footer-list h4 {
+  margin-bottom:30px;
+  color: #FFF;
 }
 
 .footer-list i {
@@ -694,7 +758,7 @@ img[src="img/growth-icon-8.png"] {
   padding:80px 10px 20px 10px;
 }
 
-.footer-bottom a {
+.footer-bottom a{
   text-decoration: none;
   color:#ccd5e2;
 }
@@ -714,8 +778,9 @@ img[src="img/growth-icon-8.png"] {
 }
 
 .logo-copyright img {
-  height: 40px;
+  height: 35px;
   position: relative;
+  padding-bottom: 5px;
   left:0;
 }
 
