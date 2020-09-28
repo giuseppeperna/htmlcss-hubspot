@@ -126,11 +126,6 @@ color: #fff;
   padding:36px 0 36px 0;
 }
 
-.nav-menu .links-right {
-  float: right;
-}
-
-
 .search-login .links-right i {
   color: #2ca1b3;
 }
@@ -169,11 +164,9 @@ color: #fff;
 
 /* proprietà relative all'hero */
 
-
 .hero-section {
   padding-top: 60px;
 }
-
 
 .homepage-hero {
   background-image: url("../img/hero.jpg");
@@ -244,7 +237,6 @@ color: #fff;
   text-align: center;
   font-size: 15px;
 }
-
 
 .learn-more{
   background: white;
@@ -636,7 +628,6 @@ img[src="img/growth-icon-8.png"] {
   position: relative;
   bottom:30px;
 }
-
 
 /* Propietà relative al footer */
 
