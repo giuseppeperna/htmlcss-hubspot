@@ -106,11 +106,6 @@ color: #fff;
   margin-left: 8px;
   text-decoration: none;
   font-family: tahoma,sans-serif;
-  color: #344758;
-}
-
-.links-left i , .links-right i {
-  color:#344758;
 }
 
 .links-left{
@@ -123,16 +118,6 @@ color: #fff;
   float: right;
 }
 
-
-.gethubspot-button {
-  height: 35px;
-  width: 120px;
-  border-radius: 4px;
-  border: none;
-  background: #ff7a59;
-  color: white;
-  margin-left: 20px;
-}
 
 .search-login .links-right i {
   color: #2ca1b3;
@@ -169,7 +154,6 @@ color: #fff;
 .nav-menu ul li {
   display: inline-block;
   margin-left: 25px;
-  color: #344758;
 }
 
 /* proprietà relative all'hero */
@@ -203,7 +187,6 @@ color: #fff;
 
 .text-banner h1 {
   font-size: 55px;
-  color: #344758;
   font-weight: 900;
 }
 
@@ -227,10 +210,6 @@ color: #fff;
   position: relative;
   width:70%;
   margin:auto;
-}
-
-.mission-text * {
-  color:#344758;
 }
 
  .mission-text > img {
@@ -259,7 +238,6 @@ color: #fff;
 .learn-more{
   background: white;
   border-radius: 5px;
-  /* border:1px solid lightgrey; */
   box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
   margin-top: 5px;
   width: 100%;
@@ -300,19 +278,18 @@ color: #fff;
   float:left;
   top:40px;
   width: 70%;
-  color: #344758;
 }
 
 .right-side i, .card-feature i {
   color:#ff7a59;
 }
 
-.right-side h2, h3 {
+.right-side h2 {
   margin: 20px 0 35px 0;
 }
 
 .right-side h3 {
-  margin-right: 50px;
+  margin:20px 50px 35px 0;
   display: inline-block;
 }
 
@@ -351,7 +328,6 @@ color: #fff;
   width: 33%;
   margin:1px;
   width: calc(100% / 3 - 2px);
-  color: #344758;
   margin-bottom: 50px;
 }
 
@@ -404,8 +380,23 @@ color: #fff;
   margin: 35px 0 25px; 0;
 }
 
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/* .cards{
+  width: 92%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+} */
+
 .card-left {
-  float:left;
+  /* float:left; */
   width: 92%;
   background: white;
   border-radius: 5px;
@@ -424,7 +415,7 @@ color: #fff;
 }
 
 .card-right {
-  float:right;
+  /* float:right; */
   width: 92%;
   background: white;
   border-radius: 5px;
