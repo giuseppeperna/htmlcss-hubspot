@@ -14,6 +14,14 @@ body {
   clear: both;
 }
 
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 /* Colours and decoration */
 
 .primary-colour {
@@ -30,6 +38,10 @@ body {
 
 .white-text {
 color: #fff;
+}
+
+.footer-text-colour {
+  color:#ccd5e2;
 }
 
 .decoration-none {
@@ -56,7 +68,7 @@ color: #fff;
 
 .gethubspot-smalltext {
   border-radius: 5px;
-  padding: 23px 40px 23px 40px;;
+  padding: 20px 40px 20px 40px;;
   font-size: 15px;
 }
 
@@ -131,7 +143,6 @@ color: #fff;
   display: inline-block;
   padding: 30px 0 0 0;
   position: relative;
-  float: right;
   left:0;
   top:50%;
   transform: translate(0,0);
@@ -252,7 +263,6 @@ color: #fff;
 
 .left-side {
   position:relative;
-  float:left;
   height: 100%;
   width: 30%;
   padding: 40px 0px 100px 0px;
@@ -275,7 +285,6 @@ color: #fff;
 
 .right-side {
   position:relative;
-  float:left;
   top:40px;
   width: 70%;
 }
@@ -324,7 +333,6 @@ color: #fff;
 }
 
 .card-feature {
-  float: left;
   width: 33%;
   margin:1px;
   width: calc(100% / 3 - 2px);
@@ -380,23 +388,7 @@ color: #fff;
   margin: 35px 0 25px; 0;
 }
 
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-/* .cards{
-  width: 92%;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
-} */
-
-.card-left {
-  /* float:left; */
+.box{
   width: 92%;
   background: white;
   border-radius: 5px;
@@ -414,27 +406,15 @@ color: #fff;
   font-size: 15px;
 }
 
-.card-right {
-  /* float:right; */
-  width: 92%;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
-}
-
-.card-right p {
+.box.float-right p {
   padding: 0 30px 0 30px;
 }
 
-.card-center {
+.center-card {
   position: relative;
-  width: 92%;
   top:0;
   left:50%;
   transform:translate(-50%,0);
-  background: white;
-  border-radius: 5px;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
 }
 
 /* Propietà relative alla sezione Growth & Customers */
@@ -455,15 +435,9 @@ color: #fff;
   position: relative;
 }
 
-.learn-and-growth {
-  height: 90%;
-  width: 100%;
-}
-
 .text-growth {
   width:100%;
   text-align: center;
-  color: white;
   font-size: 20px;
   padding: 5px 60px 0 60px;
   margin-bottom: 50px;
@@ -486,7 +460,6 @@ color: #fff;
 
 .data-cell {
   position: relative;
-  float: left;
   display: inline-block;
   width: calc(100% / 4 );
   height:50%;
@@ -511,15 +484,12 @@ color: #fff;
 }
 
 .data-cell h1 {
-
-  color: white;
   font-size: 40px;
   text-align: center;
   margin-top: 50px;
 }
 
 .data-cell p {
-  color: white;
   margin-top: 20px;
   font-size: 15px;
   text-align: center;
@@ -568,23 +538,18 @@ img[src="img/growth-icon-8.png"] {
 .customers-partners {
   position: relative;
   width: 40%;
-  float: left;
-  color: #344758;
   margin-top:50px;
   padding-left: 40px;
 }
 
 .customers-partners-logo {
   width: 50%;
-  float: left;
-  color: #344758;
   margin-top: 50px;
 }
 
 .customers-partners-bottom {
   width: 100%;
   height: 75%;
-  float: left;
 }
 
 .customers-partners h1 {
@@ -603,7 +568,6 @@ img[src="img/growth-icon-8.png"] {
 
 .partners-logo {
   position: relative;
-  float: left;
   width: calc(100% / 4);
   top: 15px;
 }
@@ -639,19 +603,13 @@ img[src="img/growth-icon-8.png"] {
 }
 
 .hubspot-growing {
-  float: left;
   width: 50%;
   height: 100%;
   margin-top: 40px;
 }
 
-.hubspot-growing button {
-  height: 50px;
-  width: 180px;
-  border-radius: 4px;
-  border: none;
-  background: #ff7a59;
-  color: white;
+.hubspot-growing a {
+  margin:50px 0 0 0;
 }
 
 .hubspot-growing h1 {
@@ -661,34 +619,28 @@ img[src="img/growth-icon-8.png"] {
 
 .hubspot-growing p {
   font-size: 18px;
+  margin-bottom: 60px;
 }
 
 .hubspot-growing :last-child {
   font-size: 12px;
+  margin-top: 60px;
 }
 
 .hubspot-growing * {
   margin-bottom: 40px;
 }
 
-.hubspot-growing:not(button) {
-  color: #344758;
-}
-
 .hubspot-growing img {
-  float:right;
   height:380px;
+  position: relative;
+  bottom:30px;
 }
 
 
 /* Propietà relative al footer */
 
-.hubspot-footer {
-  background: #32495C;
-  color:#ccd5e2;
-}
-
-.hubspot-footer.footer-CTA {
+.hubspot-footer, .hubspot-footer.footer-CTA, .footer-list a[class="footer-CTA"] {
   background: #32495C;
 }
 
@@ -717,18 +669,8 @@ img[src="img/growth-icon-8.png"] {
   font-size: 15px;
 }
 
-.footer-list a, .footer-list h4 {
-  text-decoration: none;
-  color:#ccd5e2;
-}
-
-.footer-list a[class="footer-CTA"]{
-  color: #32495C;
-}
-
 .footer-list h4 {
   margin-bottom:30px;
-  color: #FFF;
 }
 
 .footer-list i {
@@ -736,23 +678,13 @@ img[src="img/growth-icon-8.png"] {
 }
 
 .footer-list {
-  color:#ccd5e2;
   padding-right: 60px;
-}
-
-.footer-columns div {
-  float: left;
   width: calc(100% / 4);
 }
 
 .footer-bottom li {
   display: inline-block;
   padding:80px 10px 20px 10px;
-}
-
-.footer-bottom a{
-  text-decoration: none;
-  color:#ccd5e2;
 }
 
 .footer-bottom ul {
@@ -781,7 +713,6 @@ img[src="img/growth-icon-8.png"] {
 }
 
 .policy a {
-  float: right;
   margin-left: 25px;
   padding-top: 35px;
 }
